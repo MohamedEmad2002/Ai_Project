@@ -1,3 +1,7 @@
+import 'package:ai_project/ui/screens/HomePage.dart';
+import 'package:ai_project/ui/screens/ScanSuccess.dart';
+import 'package:ai_project/ui/screens/SplashScreen.dart';
+import 'package:ai_project/ui/screens/Uploading.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -9,8 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
+         home: SplashScreen(),
     );
   }
 }
