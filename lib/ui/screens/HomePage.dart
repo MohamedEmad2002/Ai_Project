@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Uploading.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -55,7 +57,9 @@ class HomePage extends StatelessWidget {
             Container(
               height: 45,
               padding: const EdgeInsets.only(left: 40,right:40 ),
-              child: ElevatedButton(onPressed: (){},style: const ButtonStyle(
+              child: ElevatedButton(onPressed: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context) => UploadingScreen(),));
+              },style: const ButtonStyle(
 
                 shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(7.0)))),
                 backgroundColor:  MaterialStatePropertyAll(Color(0xff061224),),

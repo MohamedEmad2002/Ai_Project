@@ -1,9 +1,29 @@
+import 'dart:async';
+
+import 'package:ai_project/ui/screens/ScanSuccess.dart';
 import 'package:flutter/material.dart';
 
-class UploadingScreen extends StatelessWidget {
+class UploadingScreen extends StatefulWidget {
   const UploadingScreen({Key? key}) : super(key: key);
 
   @override
+  State<UploadingScreen> createState() => _UploadingScreenState();
+}
+
+class _UploadingScreenState extends State<UploadingScreen> {
+  void initState() {
+    super.initState();
+    Timer(Duration(seconds: 5),
+            ()=>Navigator.pushReplacement(context,
+            MaterialPageRoute(builder:
+                (context) =>
+                const ScanSuccess(),
+            )
+        )
+    );
+  }
+  @override
+
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
