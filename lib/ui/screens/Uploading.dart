@@ -30,7 +30,7 @@ class _UploadingScreenState extends State<UploadingScreen> {
         child: Stack(
           children: [
             SizedBox(
-
+              width: double.infinity,
               child: Image.asset("assets/images/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.png",fit: BoxFit.fill),
             ),
          Positioned(
