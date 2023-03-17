@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:ai_project/ui/screens/HomePage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -27,19 +28,17 @@ class _MyHomePageState extends State<SplashScreen> {
        child: Column(
          mainAxisAlignment: MainAxisAlignment.center,
          children: [
-           const Text("Emotion",style: TextStyle(
-             color: Colors.white,fontSize: 40
-           ),),
            Container(
-             padding: const EdgeInsets.only(left: 40),
-               child: const Text("Recognition",style: TextStyle(
-                   color: Colors.white,fontSize: 40
-               ),)
+             width: 247.w,
+             height: 96.h,
+             margin: EdgeInsets.only(left: 20.w),
+             child: Text("Emotion Recognition",textAlign: TextAlign.start,style: TextStyle(
+              color: Colors.white,fontSize: 36.sp
+                 ),),
            ),
          ],
        ),
      ),
-
     );
   }
 }
